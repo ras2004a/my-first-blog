@@ -1,0 +1,10 @@
+{% extends 'inv/base.html' %}
+{% block content %}
+            {% for inv in invs %}
+                <div class="post">
+                    <div class="date">
+                        <p>Подключался: {{ inv.hostname }} {{ inv.ip4address }} {{ inv.loginInRDP|linebreaksbr }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+{% endblock %}

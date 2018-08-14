@@ -1,0 +1,23 @@
+﻿cd D:\work\python\djangogirls 
+python3 -m venv myvenv
+myvenv\Scripts\activate
+
+python manage.py startapp blog
+
+
+python manage.py runserver
+
+
+
+python manage.py migrate --run-syncdb
+
+sqlitedb:db.sqlite3
+
+
+
+
+pip install python-dateutil
+
+from dateutil import parser
+dt = parser.parse("Aug 28 1999 12:00AM")
+
